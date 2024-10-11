@@ -11,8 +11,5 @@
       "src": "/(.*)",
       "dest": "/src/index.ts"
     }
-  ],
-  "outputDirectory": "dist",
-  "cleanUrls": true,
-  "trailingSlash": false
+  ]
 }
