@@ -6,10 +6,12 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/src/index.ts"
+  "build": {
+    "env": {
+      "PRISMA_GENERATE": "true"
     }
-  ]
+  },
+  "postBuild": {
+    "command": "npx prisma generate"
+  }
 }
